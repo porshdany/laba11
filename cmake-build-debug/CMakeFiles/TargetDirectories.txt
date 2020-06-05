@@ -1,0 +1,4 @@
+/home/ivan/Git/lab_11_process-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ivan/Git/lab_11_process-master/cmake-build-debug/CMakeFiles/builder.dir
+/home/ivan/Git/lab_11_process-master/cmake-build-debug/CMakeFiles/main.dir
+/home/ivan/Git/lab_11_process-master/cmake-build-debug/CMakeFiles/edit_cache.dir

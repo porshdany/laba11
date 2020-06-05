@@ -1,0 +1,28 @@
+sudo: false
+
+language: cpp
+
+compiler:
+  -gcc
+
+before_install:
+  - pip install --user cpp-coveralls
+
+install:
+  - export CXX="g++-8" CC="gcc-8"
+  - git diff --cached --submodule
+  - git submodule init
+  - git submodule update
+  - cmake -H. -B_builds
+  - cmake --build _builds
+
+script:
+  - ctest -V
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-8
+    - g++-8
